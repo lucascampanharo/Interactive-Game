@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: black;
+}
+
+.tela-jogo {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.jogo-superior {
+  flex: 1;
+  background-color: #555;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+.jogo-inferior {
+  flex: 2.7;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animacao-img {
+  max-height: 200px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  margin: 0.5em;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}

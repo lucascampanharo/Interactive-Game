@@ -1,7 +1,6 @@
 {
   "inicio": {
     "texto": "Você está à frente de uma caverna. O que deseja fazer?",
-    "imagem": "inicio.png",
     "opcoes": [
       { "texto": "Explorar a caverna", "proximo": "caverna" },
       { "texto": "Olhar ao redor", "proximo": "olhar" }
@@ -9,7 +8,6 @@
   },
   "caverna": {
     "texto": "Você entra na caverna e sente uma aura muito forte em sua direção.",
-    "imagem": "caverna.png",
     "opcoes": [
       { "texto": "Seguir em frente", "proximo": "fundo" },
       { "texto": "Voltar", "proximo": "inicio" }
@@ -17,7 +15,6 @@
   },
   "olhar": {
     "texto": "Você vê árvores e um riacho próximo.",
-    "imagem": "olhar.png",
     "opcoes": [
       { "texto": "Beber água", "proximo": "agua" },
       { "texto": "Voltar", "proximo": "inicio" }
@@ -25,12 +22,10 @@
   },
   "agua": {
     "texto": "A água é refrescante! Você se sente revigorado.",
-    "imagem": "agua.png",
     "opcoes": [{ "texto": "Voltar", "proximo": "inicio" }]
   },
   "fundo": {
     "texto": "Você se depara com um ser sombrio sentado em um trono de pedra.",
-    "imagem": "fundo.png",
     "opcoes": [
       { "texto": "Falar com o ser", "proximo": "fala1" },
       { "texto": "Voltar", "proximo": "caverna" }
@@ -38,15 +33,13 @@
   },
   "fala1": {
     "texto": "O ser sombrio diz:<br>- Eu estava te esperando.",
-    "imagem": "fala1.png",
     "opcoes": [
       { "texto": "Esperando?...", "proximo": "fala2" },
       { "texto": "Sim, é o seu fim!", "acao": "atacar" }
     ]
   },
   "fala2": {
-    "texto": "O ser sombrio diz:<br><i>Você é muito previsível, eu vi tudo que você aprontou no vale.</i>",
-    "imagem": "fala2.png",
+    "texto": "O ser sombrio diz:<br><i>Você é muito previsível, eu vi tudo que você aprontou no vale.<br>Você não se lembra o que aconteceu.</i>",
     "opcoes": [{ "texto": "Voltar", "proximo": "fundo" }]
   }
 }
