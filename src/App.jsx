@@ -12,9 +12,6 @@ function App() {
   const avancarCena = (opcao) => {
     if (opcao.proximo) {
       setCenaAtual(opcao.proximo);
-    } else if (opcao.acao === "atacar") {
-      const d12 = Math.ceil(Math.random() * 12);
-      alert(`Você atacou com força ${d12}!`);
     }
   };
 
