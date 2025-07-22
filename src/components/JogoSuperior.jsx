@@ -1,3 +1,4 @@
+import "../styles/jogo.css";
 import Texto from "./Texto";
 import Opcoes from "./Opcoes";
 
