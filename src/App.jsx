@@ -3,7 +3,7 @@ import historia from "./data/historia.json";
 import JogoSuperior from "./components/JogoSuperior";
 import JogoInferior from "./components/JogoInferior";
 import Menu from "./components/Menu"; // ← novo
-import "./styles/index.css";
+import "./styles/jogo.css";
 
 function App() {
   const [tela, setTela] = useState("menu"); // "menu" ou "jogo"

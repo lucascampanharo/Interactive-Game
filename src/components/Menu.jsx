@@ -5,7 +5,10 @@ export default function Menu({ aoIniciar }) {
     <div className="menu-container">
       <h1 className="titulo-jogo">Aventura Interativa</h1>
       <button className="botao-iniciar" onClick={aoIniciar}>
-        Iniciar Jogo
+        Iniciar do Jogo
+      </button>
+      <button className="botao-iniciar" onClick={aoIniciar}>
+        Sair do Jogo
       </button>
     </div>
   );
