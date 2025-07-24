@@ -1,7 +1,18 @@
+import { useEffect, useState } from "react";
 import "../styles/menu.css";
 
 export default function Menu({ aoIniciar }) {
   const titulo = "Aventura Interativa";
+  const [mostrarBotoes, setMostrarBotoes] = useState(false);
+
+  useEffect(() => {
+    const tempoTotalAnimacao = 2400; // 2.4 segundos (ms)
+    const timeout = setTimeout(() => {
+      setMostrarBotoes(true);
+    }, tempoTotalAnimacao);
+
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <div className="menu-container">
@@ -13,15 +24,26 @@ export default function Menu({ aoIniciar }) {
         ))}
       </h1>
 
-      <button className="botao" onClick={aoIniciar}>
-        Iniciar do Jogo
-      </button>
-      <button className="botao" onClick={aoIniciar}>
-        Opções
-      </button>
-      <button className="botao" onClick={aoIniciar}>
-        Sair do Jogo
-      </button>
+      <div>
+        <button
+          className={`botao ${mostrarBotoes ? "mostrar" : ""}`}
+          onClick={aoIniciar}
+        >
+          Iniciar
+        </button>
+        <button
+          className={`botao ${mostrarBotoes ? "mostrar" : ""}`}
+          onClick={aoIniciar}
+        >
+          Opções
+        </button>
+        <button
+          className={`botao ${mostrarBotoes ? "mostrar" : ""}`}
+          onClick={aoIniciar}
+        >
+          Sair do Jogo
+        </button>
+      </div>
     </div>
   );
 }

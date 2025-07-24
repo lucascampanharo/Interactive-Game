@@ -20,13 +20,14 @@ body {
 }
 
 .titulo-jogo span {
+  font-family: "IM Fell English SC", serif;
   display: inline-block;
   opacity: 0;
   transform: translateY(20px);
-  animation: letraAnimar 0.4s ease-out forwards;
+  animation: Animar 0.4s ease-out forwards;
 }
 
-@keyframes letraAnimar {
+@keyframes Animar {
   to {
     opacity: 1;
     transform: translateY(0);
@@ -34,27 +35,49 @@ body {
 }
 
 .botao {
+  font-family: "IM Fell English SC", serif;
   display: block;
   margin: auto;
   margin-bottom: 1rem;
   background: #13a52ba6;
-  font-family: inherit;
   padding: 0.6em 1.3em;
   font-weight: 900;
   font-size: 18px;
-  border: 3px solid black;
+  border: 3px solid rgb(0, 109, 94);
   border-radius: 0.4em;
-  box-shadow: 0.1em 0.1em;
   cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none; /* bloqueia clique enquanto invisível */
+
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.botao.mostrar {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto; /* libera clique quando aparece */
 }
 
 .botao:hover {
-  background-color: #15fc00;
+  background-color: #1a8f0f;
   transform: translate(-0.05em, -0.05em);
   box-shadow: 0.15em 0.15em;
 }
 
-botao:active {
+.botao:active {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em;
+}
+
+@keyframes botaoAnimar {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
