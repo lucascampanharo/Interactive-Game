@@ -8,6 +8,9 @@ export default function Menu({ aoIniciar }) {
         Iniciar do Jogo
       </button>
       <button className="botao-iniciar" onClick={aoIniciar}>
+        Opções
+      </button>
+      <button className="botao-iniciar" onClick={aoIniciar}>
         Sair do Jogo
       </button>
     </div>
