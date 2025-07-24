@@ -1,7 +1,12 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: black;
+  background: #917c49;
+  background: linear-gradient(
+    180deg,
+    rgba(145, 124, 73, 1) 0%,
+    rgba(56, 39, 3, 1) 100%
+  );
 }
 
 .tela-jogo {
@@ -10,35 +15,12 @@ body {
   height: 100vh;
 }
 
-.jogo-superior {
-  flex: 1;
-  background-color: #555;
-  color: white;
-  text-align: center;
-  padding: 2em;
-}
-
-.titulo-jogo {
-  font-family: "IM Fell English SC", serif;
-  font-size: 55px;
-  color: #ddd;
-}
-
 .jogo-inferior {
+  width: 822px;
+  margin: 0 auto;
   flex: 2.7;
-  background-color: #000;
+  background-color: #382703;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-button {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 0.6em 1.2em;
-  margin: 0.5em;
-  border-radius: 8px;
-  font-size: 1em;
-  cursor: pointer;
 }

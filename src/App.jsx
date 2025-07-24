@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import historia from "./data/historia.json";
 import JogoSuperior from "./components/JogoSuperior";
 import JogoInferior from "./components/JogoInferior";
-import Menu from "./components/Menu"; // ← novo
+import Menu from "./components/Menu";
 import "./styles/jogo.css";
 
 function App() {
@@ -16,6 +16,11 @@ function App() {
       setCenaAtual(opcao.proximo);
     }
   };
+
+  // Aplica classe no <body> dependendo da tela atual
+  useEffect(() => {
+    document.body.className = tela === "menu" ? "menu-body" : "";
+  }, [tela]);
 
   return (
     <div className="tela-jogo">

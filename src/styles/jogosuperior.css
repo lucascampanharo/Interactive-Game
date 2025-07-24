@@ -1,0 +1,32 @@
+.jogo-superior {
+  width: 758px;
+  margin: 0 auto;
+  flex: 1;
+  background-color: #917c49;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+.tela-jogo {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.titulo-jogo {
+  font-family: "IM Fell English SC", serif;
+  font-size: 55px;
+  color: #ddd;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  margin: 0.5em;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}

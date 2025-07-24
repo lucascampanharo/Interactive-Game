@@ -1,4 +1,4 @@
-import "../styles/jogo.css";
+import "../styles/jogosuperior.css";
 import Texto from "./Texto";
 import Opcoes from "./Opcoes";
 
