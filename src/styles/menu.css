@@ -15,30 +15,46 @@ body {
 
 .menu-container {
   text-align: center;
-  margin-top: 20vh;
-  margin-right: 10vh;
+  margin-top: 5vh;
+  margin-right: 25vh;
 }
 
-.titulo-jogo {
-  font-family: "IM Fell English SC", serif;
-  font-size: 55px;
-  color: #ddd;
+.titulo-jogo span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: letraAnimar 0.4s ease-out forwards;
 }
 
-.botao-iniciar {
+@keyframes letraAnimar {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.botao {
   display: block;
   margin: auto;
   margin-bottom: 1rem;
-  background-color: #333;
-  color: white;
-  border: 2px solid #777;
-  padding: 0.8em 2em;
-  font-size: 1.2rem;
-  border-radius: 10px;
+  background: #13a52ba6;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
 
-.botao-iniciar:hover {
-  background-color: #555;
+.botao:hover {
+  background-color: #15fc00;
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+botao:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
 }
