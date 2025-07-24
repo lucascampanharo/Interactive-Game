@@ -1,16 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap");
 
 body {
-  background-image: url("../assets/images/Castle.gif");
+  background-image: url("../assets/images/Castle.gif"),
+    linear-gradient(
+      0deg,
+      rgba(5, 65, 10, 1) 0%,
+      rgba(87, 199, 133, 1) 50%,
+      rgba(237, 221, 83, 1) 100%
+    );
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-color: #05410a;
 }
 
 .menu-container {
   text-align: center;
   margin-top: 20vh;
+  margin-right: 10vh;
 }
 
 .titulo-jogo {
