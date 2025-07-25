@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "../styles/menu.css";
 
-export default function Menu({ aoIniciar }) {
-  const titulo = "Aventura Interativa";
+export default function Menu({ aoIniciar, Settings, Sair }) {
+  const titulo = "A Lenda do Forquetense";
   const [mostrarBotoes, setMostrarBotoes] = useState(false);
 
   useEffect(() => {
@@ -33,13 +33,13 @@ export default function Menu({ aoIniciar }) {
         </button>
         <button
           className={`botao ${mostrarBotoes ? "mostrar" : ""}`}
-          onClick={aoIniciar}
+          onClick={Settings}
         >
           Opções
         </button>
         <button
           className={`botao ${mostrarBotoes ? "mostrar" : ""}`}
-          onClick={aoIniciar}
+          onClick={Sair}
         >
           Sair do Jogo
         </button>

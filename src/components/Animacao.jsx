@@ -1,23 +1,17 @@
 export default function Animacao({ cena }) {
-  let src = "personagem_padrao.png";
+  const animacoes = {
+    caverna: "personagem_caverna.png",
+    olhar: "personagem_observando.png",
+    agua: "personagem_bebendo.png",
+  };
 
-  switch (cena) {
-    case "caverna":
-      src = "personagem_caverna.png";
-      break;
-    case "olhar":
-      src = "personagem_observando.png";
-      break;
-    case "agua":
-      src = "personagem_bebendo.png";
-      break;
-  }
+  const src = animacoes[cena] || "personagem_padrao.png";
 
   return (
     <div className="animacao-container">
       <img
         src={`/assets/imagens/${src}`}
-        alt="Personagem"
+        alt="Personagem animado"
         className="animacao-img"
       />
     </div>

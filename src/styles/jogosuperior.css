@@ -1,5 +1,6 @@
 .jogo-superior {
-  width: 758px;
+  width: 100%;
+  max-width: 758px;
   margin: 0 auto;
   flex: 1;
   background-color: #917c49;
@@ -8,16 +9,11 @@
   padding: 2em;
 }
 
-.tela-jogo {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
 .titulo-jogo {
   font-family: "IM Fell English SC", serif;
   font-size: 55px;
   color: #ddd;
+  margin-bottom: 1em;
 }
 
 button {
@@ -29,4 +25,6 @@ button {
   border-radius: 8px;
   font-size: 1em;
   cursor: pointer;
+  min-width: 150px; /* uniformiza tamanho dos botões */
+  text-align: center;
 }
