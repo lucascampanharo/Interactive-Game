@@ -19,6 +19,7 @@ body {
 }
 
 .jogo-inferior {
+  background: url("../assets/images/caverna.webp");
   width: 100%;
   max-width: 838px;
   margin: 0 auto;

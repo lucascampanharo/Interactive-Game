@@ -19,14 +19,14 @@
 }
 
 button {
-  background-color: #008d92;
+  background-color: rgb(78, 144, 146);
   color: white;
-  border: none;
+  border: solid, rgb(0, 112, 116), 1px;
   padding: 0.6em 1.2em;
   margin: 0.5em;
   border-radius: 8px;
-  font-size: 1em;
+  font-size: 20px;
   cursor: pointer;
-  min-width: 150px; /* uniformiza tamanho dos botões */
+  min-width: 150px;
   text-align: center;
 }

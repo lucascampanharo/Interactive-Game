@@ -1,19 +1,17 @@
+import "../styles/animacao.css";
+
 export default function Animacao({ cena }) {
-  const animacoes = {
-    caverna: "personagem_caverna.png",
-    olhar: "personagem_observando.png",
-    agua: "personagem_bebendo.png",
-  };
-
-  const src = animacoes[cena] || "personagem_padrao.png";
-
   return (
     <div className="animacao-container">
-      <img
-        src={`/assets/imagens/${src}`}
-        alt="Personagem animado"
-        className="animacao-img"
-      />
+      {cena === "ataque" ? (
+        <div className="sprite-animacao ataque" />
+      ) : (
+        <img
+          src={`/assets/images/cavaleiro/Hero-idle.gif`}
+          alt="Personagem padrão"
+          className="animacao-img"
+        />
+      )}
     </div>
   );
 }

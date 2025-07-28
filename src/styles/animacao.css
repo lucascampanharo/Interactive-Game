@@ -1,0 +1,26 @@
+.animacao-container {
+  width: 200px; /* Tamanho visível da animação */
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sprite-animacao.ataque {
+  width: 200px; /* largura de um frame */
+  height: 200px; /* altura de um frame */
+  background-image: url("/assets/imagens/ataque_cavaleiro.png");
+  background-repeat: no-repeat;
+  animation: animarAtaque 1s steps(8) infinite;
+}
+
+/* Ajuste: 8 frames na horizontal, 1 linha */
+@keyframes animarAtaque {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1600px 0; /* 200px * 8 = 1600px */
+  }
+}
