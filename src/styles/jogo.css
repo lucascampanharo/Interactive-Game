@@ -2,9 +2,10 @@ body {
   margin: 0;
   font-family: "IM Fell English SC", serif;
   background: linear-gradient(
-    180deg,
-    rgba(145, 124, 73, 1) 0%,
-    rgba(56, 39, 3, 1) 100%
+    0deg,
+    rgba(5, 65, 10, 1) 0%,
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
   );
   overflow: hidden;
 }
@@ -19,6 +20,8 @@ body {
 
 .jogo-inferior {
   width: 100%;
+  max-width: 838px;
+  margin: 0 auto;
   flex: 2.7;
   background-color: #382703;
   display: flex;

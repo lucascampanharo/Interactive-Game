@@ -1,10 +1,12 @@
 .jogo-superior {
+  background: url("../assets/images/floresta.jpg");
   width: 100%;
   max-width: 758px;
   margin: 0 auto;
+  max-height: 300px;
   flex: 1;
-  background-color: #917c49;
   color: white;
+  font-size: 20px;
   text-align: center;
   padding: 2em;
 }
@@ -17,7 +19,7 @@
 }
 
 button {
-  background-color: #333;
+  background-color: #008d92;
   color: white;
   border: none;
   padding: 0.6em 1.2em;
